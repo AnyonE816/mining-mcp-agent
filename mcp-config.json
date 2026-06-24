@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "mining-news": {
+      "command": "python",
+      "args": ["/Users/zoom/PycharmProjects/mining-mcp-agent/servers/mining_news_mcp.py"]
+    },
+    "lme-price": {
+      "command": "python",
+      "args": ["/Users/zoom/PycharmProjects/mining-mcp-agent/servers/lme_price_mcp.py"]
+    },
+    "mineral-pdf": {
+      "command": "python",
+      "args": ["/Users/zoom/PycharmProjects/mining-mcp-agent/servers/mineral_pdf_mcp.py"]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  agent:
+    build: .
+    environment:
+      - DASHSCOPE_API_KEY=${DASHSCOPE_API_KEY}
+      - LLM_MODEL=qwen3-max
+      - LLM_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
+    # Override CMD to run a custom query:
+    # command: ["你的查询语句"]
