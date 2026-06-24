@@ -9,6 +9,8 @@
 
 ## 1. 设置 API Key（二选一）
 
+> 若系统环境已有 `DASHSCOPE_API_KEY`（`echo $DASHSCOPE_API_KEY` 有输出），此步可跳过。
+
 **方式一（推荐）：创建 .env 文件**
 
 ```bash
@@ -24,9 +26,17 @@ export DASHSCOPE_API_KEY="sk-your-key-here"
 
 Agent 启动时会先检查环境变量 `DASHSCOPE_API_KEY`，再检查项目根目录 `.env` 文件。两者都没找到会报错并给出提示。
 
-## 2. 安装依赖
+## 2. 创建虚拟环境并安装依赖
 
 ```bash
+# 创建虚拟环境（隔离项目依赖，避免污染系统 Python）
+python3 -m venv venv
+
+# 激活虚拟环境（macOS/Linux）
+source venv/bin/activate
+# Windows: venv\Scripts\activate
+
+# 安装依赖
 pip install -r requirements.txt
 ```
 
